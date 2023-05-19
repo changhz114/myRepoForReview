@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0FFFF"
+    android:outlineProvider="paddedBounds"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView_Geothermal_Heat_Pump_Calculator"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="104dp"
+        android:layout_marginTop="100dp"
+        android:fontFamily="sans-serif-light"
+        android:text="@string/geothermal_calculator"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/btn_IGSHPA"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.081" />
+
+    <Button
+        android:id="@+id/btn_IGSHPA"
+        android:layout_width="@dimen/button_width"
+        android:layout_height="@dimen/button_height"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="350dp"
+        android:background="@drawable/round_button"
+        android:onClick="clickIGSHPA"
+        android:text="IGSHPA"
+        app:layout_constraintBottom_toTopOf="@+id/btn_ASHRAE"
+        app:layout_constraintEnd_toStartOf="@+id/btn_IGSHPA_info"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/btn_IGSHPA_info"
+        android:layout_width="45dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginLeft="10dp"
+        android:background="@null"
+        android:backgroundTint="#F3979090"
+        android:onClick="IGSHPAInfo"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toEndOf="@id/btn_IGSHPA"
+        app:layout_constraintTop_toTopOf="@id/btn_IGSHPA"
+        app:srcCompat="@drawable/ic_baseline_infomation"
+        app:tint="#F3979090" />
+
+    <Button
+        android:id="@+id/btn_ASHRAE"
+        android:layout_width="@dimen/button_width"
+        android:layout_height="@dimen/button_height"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/round_button"
+        android:onClick="clickASHRAE"
+        android:text="ASHRAE"
+        app:layout_constraintEnd_toStartOf="@+id/btn_ASHRAE_info"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_IGSHPA" />
+
+    <ImageButton
+        android:id="@+id/btn_ASHRAE_info"
+        android:layout_width="45dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginLeft="10dp"
+        android:background="@null"
+        android:onClick="ASHRAEInfo"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toEndOf="@id/btn_ASHRAE"
+        app:layout_constraintTop_toTopOf="@id/btn_ASHRAE"
+        app:srcCompat="@drawable/ic_baseline_infomation"
+        app:tint="#F3979090" />
+</androidx.constraintlayout.widget.ConstraintLayout>

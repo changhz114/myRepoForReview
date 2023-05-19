@@ -1,0 +1,984 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ASHRAE.DataInputImperialASHRAE">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="1dp"
+        android:layout_marginBottom="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="30dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="r(p,in)" />
+
+                <ImageButton
+                    android:id="@+id/btn_ashrae_rpin"
+                    android:layout_width="65dp"
+                    android:layout_height="20dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="100dp"
+                    android:background="@null"
+                    android:onClick="onImageButtonClick"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/ic_baseline_infomation"
+                    app:tint="#F3979090" />
+
+                <EditText
+                    android:id="@+id/input_1"
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="180dp"
+                    android:background="@drawable/edit_text"
+                    android:inputType="numberDecimal|numberSigned"
+                    android:maxLength="8"
+                    android:singleLine="true" />
+
+                <TextView
+                    android:id="@+id/textViewx1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_toRightOf="@id/input_1"
+                    android:text="ft" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="r(p,ext)" />
+
+                <ImageButton
+                    android:id="@+id/btn_ashrae_rpext"
+                    android:layout_width="65dp"
+                    android:layout_height="20dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="100dp"
+                    android:background="@null"
+                    android:onClick="onImageButtonClick"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/ic_baseline_infomation"
+                    app:tint="#F3979090" />
+
+                <EditText
+                    android:id="@+id/input_2"
+
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="180dp"
+                    android:background="@drawable/edit_text"
+                    android:inputType="numberDecimal|numberSigned"
+                    android:singleLine="true" />
+
+                <TextView
+                    android:id="@+id/textViewx2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_toRightOf="@id/input_2"
+                    android:text="ft" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="20dp"
+                    android:text="r(bore)" />
+
+                <ImageButton
+                    android:id="@+id/btn_ashrae_rbore"
+                    android:layout_width="65dp"
+                    android:layout_height="20dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="100dp"
+                    android:background="@null"
+                    android:onClick="onImageButtonClick"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/ic_baseline_infomation"
+                    app:tint="#F3979090" />
+
+                <EditText
+                    android:id="@+id/input_3"
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="180dp"
+                    android:background="@drawable/edit_text"
+                    android:inputType="numberDecimal|numberSigned"
+                    android:singleLine="true" />
+
+                <TextView
+                    android:id="@+id/textViewx3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_toRightOf="@id/input_3"
+                    android:text="ft" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="20dp"
+                    android:text="k(G)" />
+
+                <ImageButton
+                    android:id="@+id/btn_ashrae_kg"
+                    android:layout_width="65dp"
+                    android:layout_height="20dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="100dp"
+                    android:background="@null"
+                    android:onClick="onImageButtonClick"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/ic_baseline_infomation"
+                    app:tint="#F3979090" />
+
+                <EditText
+                    android:id="@+id/input_4"
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="180dp"
+                    android:background="@drawable/edit_text"
+                    android:inputType="numberDecimal|numberSigned"
+                    android:singleLine="true" />
+
+                <TextView
+                    android:id="@+id/textViewx4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_toRightOf="@id/input_4"
+                    android:text="BTU/(hr ft °F)" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="20dp"
+                    android:text="k(grout)" />
+
+                <ImageButton
+                    android:id="@+id/btn_ashrae_kgrout"
+                    android:layout_width="65dp"
+                    android:layout_height="20dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="100dp"
+                    android:background="@null"
+                    android:onClick="onImageButtonClick"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/ic_baseline_infomation"
+                    app:tint="#F3979090" />
+
+                <EditText
+                    android:id="@+id/input_5"
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="180dp"
+                    android:background="@drawable/edit_text"
+                    android:inputType="numberDecimal|numberSigned"
+                    android:singleLine="true" />
+
+                <TextView
+                    android:id="@+id/textViewx5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_toRightOf="@id/input_5"
+                    android:text="BTU/(hr ft °F)" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="20dp"
+                    android:text="k(Pipe)" />
+
+                <ImageButton
+                    android:id="@+id/btn_ashrae_kpipe"
+                    android:layout_width="65dp"
+                    android:layout_height="20dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="100dp"
+                    android:background="@null"
+                    android:onClick="onImageButtonClick"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/ic_baseline_infomation"
+                    app:tint="#F3979090" />
+
+                <EditText
+                    android:id="@+id/input_6"
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="180dp"
+                    android:background="@drawable/edit_text"
+                    android:inputType="numberDecimal|numberSigned"
+                    android:singleLine="true" />
+
+                <TextView
+                    android:id="@+id/textViewx6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_toRightOf="@id/input_6"
+                    android:text="BTU/(hr ft °F)" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="20dp"
+                    android:text="Lu" />
+
+                <ImageButton
+                    android:id="@+id/btn_ashrae_lu"
+                    android:layout_width="65dp"
+                    android:layout_height="20dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="100dp"
+                    android:background="@null"
+                    android:onClick="onImageButtonClick"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/ic_baseline_infomation"
+                    app:tint="#F3979090" />
+
+                <EditText
+                    android:id="@+id/input_7"
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="180dp"
+                    android:background="@drawable/edit_text"
+                    android:inputType="numberDecimal|numberSigned"
+                    android:singleLine="true" />
+
+                <TextView
+                    android:id="@+id/textViewx7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_toRightOf="@id/input_7"
+                    android:text="ft" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="20dp"
+                    android:text="h(conv)" />
+
+                <ImageButton
+                    android:id="@+id/btn_ashrae_hconv"
+                    android:layout_width="65dp"
+                    android:layout_height="20dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="100dp"
+                    android:background="@null"
+                    android:onClick="onImageButtonClick"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/ic_baseline_infomation"
+                    app:tint="#F3979090" />
+
+                <EditText
+                    android:id="@+id/input_8"
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="180dp"
+                    android:background="@drawable/edit_text"
+                    android:inputType="numberDecimal|numberSigned"
+                    android:singleLine="true" />
+
+                <TextView
+                    android:id="@+id/textViewx8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_toRightOf="@id/input_8"
+                    android:text="BTU/(hr ft2 °F)" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="20dp"
+                    android:text="α" />
+
+                <ImageButton
+                    android:id="@+id/btn_ashrae_alpha"
+                    android:layout_width="65dp"
+                    android:layout_height="20dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="100dp"
+                    android:background="@null"
+                    android:onClick="onImageButtonClick"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/ic_baseline_infomation"
+                    app:tint="#F3979090" />
+
+                <EditText
+                    android:id="@+id/input_9"
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="180dp"
+                    android:background="@drawable/edit_text"
+                    android:inputType="numberDecimal|numberSigned"
+                    android:singleLine="true" />
+
+                <TextView
+                    android:id="@+id/textViewx9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_toRightOf="@id/input_9"
+                    android:text="ft^2/day" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="20dp"
+                    android:text="T(inHP)" />
+
+                <ImageButton
+                    android:id="@+id/btn_ashrae_tin"
+                    android:layout_width="65dp"
+                    android:layout_height="20dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="100dp"
+                    android:background="@null"
+                    android:onClick="onImageButtonClick"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/ic_baseline_infomation"
+                    app:tint="#F3979090" />
+
+                <EditText
+                    android:id="@+id/input_10"
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="180dp"
+                    android:background="@drawable/edit_text"
+                    android:inputType="numberDecimal|numberSigned"
+                    android:singleLine="true" />
+
+                <TextView
+                    android:id="@+id/textViewx10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_toRightOf="@id/input_10"
+                    android:text="°F" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="20dp"
+                    android:text="m(fls)" />
+
+                <ImageButton
+                    android:id="@+id/btn_ashrae_mfls"
+                    android:layout_width="65dp"
+                    android:layout_height="20dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="100dp"
+                    android:background="@null"
+                    android:onClick="onImageButtonClick"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/ic_baseline_infomation"
+                    app:tint="#F3979090" />
+
+                <EditText
+                    android:id="@+id/input_11"
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="180dp"
+                    android:background="@drawable/edit_text"
+                    android:inputType="numberDecimal|numberSigned"
+                    android:singleLine="true" />
+
+                <TextView
+                    android:id="@+id/textViewx11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_toRightOf="@id/input_11"
+                    android:text="BTU/(lb·°F)" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="20dp"
+                    android:text="Cp" />
+
+                <ImageButton
+                    android:id="@+id/btn_ashrae_cp"
+                    android:layout_width="65dp"
+                    android:layout_height="20dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="100dp"
+                    android:background="@null"
+                    android:onClick="onImageButtonClick"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/ic_baseline_infomation"
+                    app:tint="#F3979090" />
+
+                <EditText
+                    android:id="@+id/input_12"
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="180dp"
+                    android:background="@drawable/edit_text"
+                    android:inputType="numberDecimal|numberSigned"
+                    android:singleLine="true" />
+
+                <TextView
+                    android:id="@+id/textViewx12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_toRightOf="@id/input_12"
+                    android:text="Btu/(lb °F)" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="20dp"
+                    android:text="B" />
+
+                <ImageButton
+                    android:id="@+id/btn_ashrae_b"
+                    android:layout_width="65dp"
+                    android:layout_height="20dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="100dp"
+                    android:background="@null"
+                    android:onClick="onImageButtonClick"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/ic_baseline_infomation"
+                    app:tint="#F3979090" />
+
+                <EditText
+                    android:id="@+id/input_13"
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="180dp"
+                    android:background="@drawable/edit_text"
+                    android:inputType="numberDecimal|numberSigned"
+                    android:singleLine="true" />
+
+                <TextView
+                    android:id="@+id/textViewx13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_toRightOf="@id/input_13"
+                    android:text="ft" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView17"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="20dp"
+                    android:text="H" />
+
+                <ImageButton
+                    android:id="@+id/btn_ashrae_h"
+                    android:layout_width="65dp"
+                    android:layout_height="20dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="100dp"
+                    android:background="@null"
+                    android:onClick="onImageButtonClick"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/ic_baseline_infomation"
+                    app:tint="#F3979090" />
+
+                <EditText
+                    android:id="@+id/input_14"
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="180dp"
+                    android:background="@drawable/edit_text"
+                    android:inputType="numberDecimal|numberSigned"
+                    android:singleLine="true" />
+
+                <TextView
+                    android:id="@+id/textViewx14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_toRightOf="@id/input_14"
+                    android:text="ft" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="20dp"
+                    android:text="N(B)" />
+
+                <ImageButton
+                    android:id="@+id/btn_ashrae_numberOfBoreholes"
+                    android:layout_width="65dp"
+                    android:layout_height="20dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="100dp"
+                    android:background="@null"
+                    android:onClick="onImageButtonClick"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/ic_baseline_infomation"
+                    app:tint="#F3979090" />
+
+                <EditText
+                    android:id="@+id/input_15"
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="180dp"
+                    android:background="@drawable/edit_text"
+                    android:inputType="numberDecimal|numberSigned"
+                    android:singleLine="true" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView19"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="20dp"
+                    android:text="A" />
+
+                <ImageButton
+                    android:id="@+id/btn_ashrae_a"
+                    android:layout_width="65dp"
+                    android:layout_height="20dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="100dp"
+                    android:background="@null"
+                    android:onClick="onImageButtonClick"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/ic_baseline_infomation"
+                    app:tint="#F3979090" />
+
+                <EditText
+                    android:id="@+id/input_16"
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="180dp"
+                    android:background="@drawable/edit_text"
+                    android:inputType="numberDecimal|numberSigned"
+                    android:singleLine="true" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="20dp"
+                    android:text="T(g)" />
+
+                <ImageButton
+                    android:id="@+id/btn_ashrae_tg"
+                    android:layout_width="65dp"
+                    android:layout_height="20dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="100dp"
+                    android:background="@null"
+                    android:onClick="onImageButtonClick"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/ic_baseline_infomation"
+                    app:tint="#F3979090" />
+
+                <EditText
+                    android:id="@+id/input_17"
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="180dp"
+                    android:background="@drawable/edit_text"
+                    android:inputType="numberDecimal|numberSigned"
+                    android:singleLine="true" />
+
+                <TextView
+                    android:id="@+id/textViewx17"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/input_17"
+                    android:text="°F" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView21"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="20dp"
+                    android:text="q(y)" />
+
+                <ImageButton
+                    android:id="@+id/btn_ashrae_qy"
+                    android:layout_width="65dp"
+                    android:layout_height="20dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="100dp"
+                    android:background="@null"
+                    android:onClick="onImageButtonClick"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/ic_baseline_infomation"
+                    app:tint="#F3979090" />
+
+                <EditText
+                    android:id="@+id/input_18"
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="180dp"
+                    android:background="@drawable/edit_text"
+                    android:inputType="numberDecimal|numberSigned"
+                    android:singleLine="true" />
+
+                <TextView
+                    android:id="@+id/textViewx18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_toRightOf="@id/input_18"
+                    android:text="hp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView22"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="20dp"
+                    android:text="q(h)" />
+
+                <ImageButton
+                    android:id="@+id/btn_ashrae_qh"
+                    android:layout_width="65dp"
+                    android:layout_height="20dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="100dp"
+                    android:background="@null"
+                    android:onClick="onImageButtonClick"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/ic_baseline_infomation"
+                    app:tint="#F3979090" />
+
+                <EditText
+                    android:id="@+id/input_19"
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="180dp"
+                    android:background="@drawable/edit_text"
+                    android:inputType="numberDecimal|numberSigned"
+                    android:singleLine="true" />
+
+                <TextView
+                    android:id="@+id/textViewx19"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_toRightOf="@id/input_19"
+                    android:text="hp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView23"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="20dp"
+                    android:text="q(mc)" />
+
+                <ImageButton
+                    android:id="@+id/btn_ashrae_qm"
+                    android:layout_width="65dp"
+                    android:layout_height="20dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="100dp"
+                    android:background="@null"
+                    android:onClick="onImageButtonClick"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/ic_baseline_infomation"
+                    app:tint="#F3979090" />
+
+                <EditText
+                    android:id="@+id/input_20"
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="180dp"
+                    android:background="@drawable/edit_text"
+                    android:inputType="numberDecimal|numberSigned"
+                    android:singleLine="true" />
+
+                <TextView
+                    android:id="@+id/textViewx20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_toRightOf="@id/input_20"
+                    android:text="hp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="30dp"
+                android:orientation="horizontal">
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="30dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/confirm_input"
+                    android:layout_width="130dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="100dp"
+                    android:layout_marginEnd="100dp"
+                    android:layout_marginBottom="30dp"
+                    android:background="@drawable/round_button"
+                    android:onClick="clickASHREAConfirm"
+                    android:text="@string/calculate"/>
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

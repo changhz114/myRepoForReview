@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AN-Boxjelly</string>
+    <string name="IGSHPA_info">IGSHPA为垂直钻孔、水平钻孔和水平挖槽式地源热泵系统提供了计算所需管道长度的方法，
+        以及针对加热和制冷的每种方法的变种。对于钻孔系统，假设与地面进行热交换的土壤温度始终保持恒定。
+        当从地面获得的能量与释放到地面的能量相等时，这种假设是有效的。
+        但是，如果在某个时刻这种假设不成立，就需要验证一个不平衡的地负荷校正因子来调整钻孔长度。</string>
+    <string name="IGSHPA_info_V2">国际地源热泵协会（IGSHPA）提供了针对垂直钻孔、水平钻孔和水平挖槽系统的预设计算方法。
+        他们的方法基于一个假设，即从地面交换热量的土壤在地表以下的特定深度具有恒定的温度。</string>
+    <string name="ASHRAE_info">ASHRAE提供的方法是一个单一方程，适用于垂直钻孔系统的加热和制冷模式，并考虑了长期钻孔加热交换效应，同时包括三个代表性建筑热负荷及其相应的热阻。</string>
+    <string name="ASHRAE_info_V2">国际地源热泵协会（IGSHPA）提供了针对垂直钻孔、水平钻孔和水平挖槽系统的预设计算方法。
+        他们的方法基于一个假设，即从地面交换热量的土壤在地表以下的特定深度具有恒定的温度。</string>
+    <string name="Development_info">此应用程序的开发者是在墨尔本大学完成软件项目的硕士研究生。</string>
+    <string name="About_the_APP_info">版本 1.0。 \n由墨尔本大学开发。\n此移动应用程序旨在作为一个工具，支持承包商在地源热泵系统的预设计阶段使用。此应用程序及其结果不能取代当前在预设计过程中使用的软件和/或手工计算。</string>
+    <string name="IGSHPAVB_info">垂直钻孔系统在住宅和商业建筑中普遍使用，因为该配置要求最少的土地可供安装。
+    然而，由于钻探成本高昂,这种系统的成本也相对较高，因此应考虑垂直和水平系统来确定最可行的配置。</string>
+    <string name="IGSHPAHB_info">水平钻孔系统是具有大面积可利用土地的属性的常见配置。使用此配置的好处是不需要进行大规模挖掘。根据不同的地块，破坏和更换当前占用土地的成本可能超过钻孔的成本，使这成为一种最佳配置。</string>
+    <string name="IGSHPAHT_info">水平挖槽系统通常是三种系统中成本最低的安装方式，因为不需要钻孔。但是，这些系统需要大面积的可用土地进行挖掘安装，即使有足够的土地可用，清除和替换当前存在的物体的成本本身也可能非常昂贵。</string>
+    <string name="COP_info">设计性能系数。（建议值为4）</string>
+    <string name="TCD_info">设计工况下热泵的总制冷能力。（建议值为20）</string>
+    <string name="HCD_info">设计工况下热泵的总供暖能力。（建议值为20）</string>
+    <string name="EERD_info">设计制冷工况下的能源效率比。（建议值为14.5）</string>
+    <string name="TG_info">地温（深层）。（建议值为18，墨尔本）</string>
+    <string name="TM_info">土壤表层前10英尺的平均地温。（建议值为24，墨尔本）</string>
+    <string name="EWTmin_info">设计供暖工况下的最低进水温度。（建议值为4，墨尔本）</string>
+    <string name="LWTmin_info">设计供暖工况下的最低出水温度。（建议值为1，墨尔本）</string>
+    <string name="EWTmax_info">设计供暖工况下的最高进水温度。（建议值为30，墨尔本）</string>
+    <string name="LWTmax_info">设计供暖工况下的最高出水温度。（建议值为34，墨尔本）</string>
+    <string name="KG_info">土壤导热系数。（建议值为1.73，墨尔本）</string>
+    <string name="DGO_info">受热传递影响的孔周围土壤直径。（建议值为4.572）</string>
+    <string name="DB_info">钻孔直径。（建议值为0.12）</string>
+    <string name="DPO_info">外管道直径。（建议值为0.027）</string>
+    <string name="Dpi_info">内管道直径。（建议值为0.022）</string>
+    <string name="kGrout_info">填充料导热系数。（建议值为0.692）</string>
+    <string name="kp_info">管道导热系数。（建议值为0.346）</string>
+    <string name="RTCLG_info">每月制冷模式下实际设备运行时间。（建议值为595）</string>
+    <string name="RTHTG_info">每月供暖模式下实际设备运行时间。（建议值为595）</string>
+    <string name="AVGPipeDepth_info">平均管道深度。（建议值为3.1）</string>
+    <string name="AS_info">地表温度在TM上下的年度平均波动。（建议值为-0.1）</string>
+    <string name="Alpha_info">土壤热扩散系数。（建议值为0.06）</string>
+    <string name="RS_info">土壤热阻。（建议值为1.6）</string>
+    <string name="SM_info">挖槽间距倍增系数。（建议值为1.2）</string>
+    <string name="PM_info">管道直径倍增系数。（建议值为1）</string>
+    <string name="rpin_info">U形管内半径。（建议值为0.0137）</string>
+    <string name="rpext_info">U形管外半径。（建议值为0.0167）</string>
+    <string name="rBore_info">钻孔半径。（建议值为0.054）</string>
+    <string name="Lu_info">U形管之间中心到中心的距离。（建议值为0.0471）</string>
+
+    <string name="hconv_info">内部对流系数。（建议值为1000）</string>
+    <string name="TinHP_info">热泵进水温度。（建议值为4.4）</string>
+    <string name="mfls_info">每千瓦峰值小时地负荷的流体质量流速。（建议值为0.074）</string>
+    <string name="Cp_info">地源热泵（GHE）流体（水）的热容量。（建议值为4000）</string>
+    <string name="B_info">钻孔之间的距离。（建议值为6.1）</string>
+    <string name="H_info">钻孔深度。（建议值为84.6）</string>
+    <string name="NB_info">钻孔地源热泵的数量。（建议值为120）</string>
+    <string name="A_info">钻孔场地的几何纵横比。（建议值为1.2）</string>
+    <string name="T_g_info">未干扰的地温。建议值为12.41）</string>
+    <string name="qy_info">年平均地负荷。建议值为-1.762）</string>
+    <string name="qm_info">月度地负荷。（建议值为-100）</string>
+    <string name="qh_info">每小时平均地负荷。建议值为-392.25）</string>
+    <string name="VB_Info">VB的信息应该在这里！</string>
+    <string name="Heat_Pump_Specification"><u>热泵规格</u></string>
+    <string name="Heat_Pump_Design_Conditions"><u>热泵设计工况</u></string>
+    <string name="Ground_Properties"><u>地壤特性</u></string>
+    <string name="Pipeline_Properties"><u>管道特性</u></string>
+    <string name="Term_and_Conditions">这些附加条款是您与墨尔本大学（以下称大学）之间的，规定了您使用“地热应用程序”（以下称应用程序）的规则。这些附加条款是对您使用应用程序适用的 Apple 条款（第三方条款）的补充。如有任何不一致，这些附加条款将优先适用。
+    \n通过使用应用程序，您被视为已阅读并理解，并同意遵守并接受这些附加条款（大学有权随时修改）。
+
+    \n<b>1. 使用应用程序</b>
+    \n1.1 承认和同意
+    \n\t应用程序是一个工具，为地热地源热泵（GSHP）系统提供一些预设计计算。您承认并同意，大学不对应用程序的运行或任何输出的准确性作出任何表示，并且应用程序应仅作为参考，而不是做出任何决定的依据。在使用通过应用程序获取的任何信息之前，您应该：
+    \n\t(a) 独立验证该信息的准确性、时效性或完整性；并
+    \n\t(b) 向适当资格的专业人士寻求独立建议。
+    \n\t大学对您或任何其他人因依赖通过应用程序获取的任何信息所做的任何决定或采取的任何行动不承担责任。
+    \n1.2 暂停和取消
+    \n\t大学可以随时在未事先通知的情况下暂停或取消您对应用程序的访问或使用。您可以通过从设备中移除应用程序并从设备或计算机中删除任何相关软件来停止使用应用程序。
+    \n1.3 隐私
+    \n\t(a) 大学可能会收集、存储并向第三方服务提供商提供“个人信息”和“敏感信息”，这些都是根据2000年信息隐私法（Vic）定义的。
+    \n\t(b) 大学关于由大学收集的信息的隐私政策可以在<a href="http://policy.unimelb.edu.au/MPF1104"> http://policy.unimelb.edu.au/MPF1104 </a>访问，并构成这些附加条款的一部分。
+    \n<b>2. 保证和赔偿</b>
+    \n2.1 消费者保障
+    \n\t(a) 除了您可能根据这些附加条款拥有的权利外，您可能还有其他权利，这些权利可能因法域而异。特别是，您可能有根据消费
+    者保障法（如澳大利亚消费者法（载于2010年竞争和消费者法案（Cth）附表2中），或澳大利亚州或领地的其他类似立法规定的商品或服务的供应），并且这些保障不能被这些附加条款排除、限制或修改（统称为消费者保障）。
+    \n\t(b) 这些附加条款并未排除、限制或修改消费者保障或任何其他任何法规条款所赋予或暗示的任何条件、保证、保障、权利或补救措施，因为这样做将：
+    \n\t(i) 违反相关法规；或
+    \n\t(ii) 导致这些附加条款的任何部分无效和/或不能执行。
+    \n2.2 责任限制
+    \n\t(a) 在条款2.2和2.3中，损失指所有责任、损失、损害、成本和费用，包括：
+    \n\t(i) 直接、间接或后果性的责任、损失、损害、成本和费用；
+    \n\t(ii) 法律费用和支出，无论是由一方承担还是判给一方的，包括调查、诉讼、和解和执行判决的费用；以及
+    \n\t(iii) 利息、罚款和罚款，由任何人遭受或承担，无论是基于合同、侵权（包括疏忽）或其他方式产生。
+    \n\t(b) 除了消费者保障，大学排除所有法规或其他方式暗示的保证、条件或其他条款，包括但不限于关于应用程序中包含的内容或通过应用程序向您提供的服务的任何目的的所有陈述或保证（包括关于在应用程序上发布的信息的准确性、时效性、完整性或适用性的陈述或保证）。
+    \n\t(c) 除了消费者保障下的责任，大学排除所有人因以下情况遭受或承担的所有损失：
+    \n\t(i) 与应用程序有关或以任何方式与应用程序有关，包括对应用程序的干扰或对计算机系统或其他电子设备的干扰或损害；或
+    \n\t(ii) 与应用程序上发布的任何错误、遗漏或不准确信息有关，包括因依赖通过应用程序获取的信息而产生的损失；以及
+    \n\t(iii) 在这些附加条款中未明确排除的任何其他损失。
+    条款或与这些附加条款有关的其他情况下。
+        \n\t(d) 除了消费者保障下的责任，大学在法律允许的最大范围内，选择限制其在条款2.2下的责任，包括：
+        \n\t(i) 重新提供服务或同等服务；或
+        \n\t(ii) 支付重新提供服务或同等服务的费用。
+\n2.3 赔偿
+   \n\t (a) 您赔偿大学及其各董事、高级职员、雇员、代理人、顾问、顾问和承包商（统称赔偿人）因以下情况而引起或与之有关的所有损失：
+        \n\t(i) 您使用应用程序；
+        \n\t(ii) 您违反这些附加条款或违反法律；
+        \n\t(iii) 您违反任何第三方条款；或
+        \n\t(iv) 任何声称您侵犯了任何人的知识产权或其他权利的索赔。
+    \n\t(b) 如果任何赔偿人因您违反这些附加条款或其他行为或疏忽而遭受或承担任何损失，而大学如果遭受或承担这些损失则能够追偿这些损失，那么大学将能够像遭受或承担这些损失一样追偿这些损失。
+\n<b>3. 一般条款</b>
+\n3.1 更改附加条款
+    \n\t大学可以随时更改这些附加条款。如果在条款更改后您继续使用应用程序，您同意受到更改后的条款的约束。
+\n3.2 可分割性
+    \n\t如果这些附加条款的任何部分被认为是无效、非法或不可执行的，那么该部分将被割舍，这些附加条款的其余部分将继续有效。
+\n3.3 管辖法律
+    \n\t这些条款受澳大利亚维多利亚州适用的法律管辖，您提交给该州的非专属管辖权。</string>
+
+
+
+
+
+<!--    //新增-->
+
+
+
+    <string name="design_method">设计方法</string>
+    <string name="ashrae_unit_selection">ASHRAE单位选择</string>
+
+    <string name="accept">接受</string>
+    <string name="term_and_condition_title">条款和条件</string>
+    <string name="decline">拒绝</string>
+
+    <string name="igshpa_vb_result">IGSHPA VB 结果</string>
+    <string name="igshpa_ht_result">IGSHPA HT 结果</string>
+    <string name="igshpa_hb_result">IGSHPA HB 结果</string>
+
+    <string name="igshpa_method">IGSHPA 方法</string>
+
+    <string name="information">信息</string>
+    <string name="ok">确定</string>
+
+    <string name="save_csv_success">保存 csv 文件成功！</string>
+    <string name="geothermal_calculator">地热热泵\n计算器</string>
+    <string name="calculation_result">计算结果</string>
+    <string name="recommended_setup">推荐设置</string>
+    <string name="configuration">配置：</string>
+    <string name="save_and_share">保存并分享</string>
+    <string name="back_to_main_menu">返回主菜单</string>
+    <string name="calculate">计算</string>
+    <string name="ashrae_result">ASHRAE 结果</string>
+    <string name="si_units">国际单位</string>
+    <string name="imperial_units">英制单位</string>
+
+    <string name="development_information">开发信息</string>
+    <string name="about_the_app">关于应用程序</string>
+    <string name="language">语言</string>
+    <string name="choose_style">样式</string>
+
+    <string name="style_default">默认主题</string>
+    <string name="style_changed_to_default">样式已更改为默认主题。</string>
+
+    <string name="style_blue">蓝色风格</string>
+    <string name="style_changed_to_blue">样式更改为蓝色。</string>
+
+    <string name="style_green">绿色风格</string>
+    <string name="style_changed_to_green">风格已更改为绿色。</string>
+
+    <string name="style_lemon">柠檬风格</string>
+    <string name="style_changed_to_lemon">风格已改为柠檬。</string>
+
+    <string name="english">English</string>
+    <string name="chinese">中文</string>
+    <string name="spanish">Español</string>
+
+    <string name="language_changed_to_english">语言已更改为英语</string>
+    <string name="language_changed_to_spanish">语言已更改为西班牙语</string>
+    <string name="language_changed_to_chinese">语言已更改为中文</string>
+    <string name="choose_language">选择语言</string>
+
+    <string name="error_empty_field">字段不能为空</string>
+    <string name="error_exceed_max_range">超出最大范围</string>
+    <string name="error_invalid_input">无效输入</string>
+    <string name="download_method_1">" PNG 格式"</string>
+    <string name="download_method_2">" CSV 格式"</string>
+    <string name="download_method_3">" 发送方案给4ee团队"</string>
+    <string name="download_title">导出</string>
+
+    <string name="vertically_bored_si">垂直钻孔\n(国际单位)</string>
+    <string name="vertically_bored_imperial">垂直钻孔\n(英制单位)</string>
+    <string name="horizontally_bored_si">水平钻孔\n(国际单位)</string>
+    <string name="horizontally_bored_imperial">水平钻孔\n(英制单位)</string>
+    <string name="horizontally_trenched_imperial">水平沟槽\n(英制单位)</string>
+    <string name="horizontally_trenched_si">水平沟槽\n(国际单位)</string>
+
+    <string name="null_m_boreholes">null 米 × null 钻孔</string>
+    <string name="min_borehole_length">最小钻孔长度：</string>
+    <string name="num_of_boreholes">钻孔数量：</string>
+    <string name="individual_borehole_length">单个钻孔长度：</string>
+    <string name="number_of_trenches">沟槽数量：</string>
+    <string name="num_of_pipes_in_each_trench">每个沟槽中的管道数量：</string>
+    <string name="minimum_trench_length">最小沟槽长度：</string>
+
+</resources>

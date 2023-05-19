@@ -1,0 +1,436 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".IGSHPA_HB_Result">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="1dp"
+        android:layout_marginBottom="0dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="10dp">
+
+            <TextView
+                android:id="@+id/HB_calculation_result"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/calculation_result"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TableLayout
+                android:id="@+id/Table1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp">
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginTop="5dp">
+
+                    <TextView
+                        android:id="@+id/HB_result_RG"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1"
+
+                        android:text="R(G):" />
+
+                    <TextView
+                        android:id="@+id/HB_result_RG_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="2"
+
+                        android:layout_marginStart="10dp"
+                        android:text="null" />
+
+                    <TextView
+                        android:id="@+id/HB_result_SB"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="3"
+
+                        android:layout_marginStart="50dp"
+                        android:text="S(B):" />
+
+                    <TextView
+                        android:id="@+id/HB_result_SB_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="4"
+
+                        android:layout_marginStart="10dp"
+                        android:text="null" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginTop="5dp">
+
+                    <TextView
+                        android:id="@+id/HB_result_RPP"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1"
+
+                        android:text="R(PP):" />
+
+                    <TextView
+                        android:id="@+id/HB_result_RPP_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="2"
+
+                        android:layout_marginStart="10dp"
+                        android:text="null" />
+
+                    <TextView
+                        android:id="@+id/HB_result_RGrout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="3"
+                        android:layout_marginStart="50dp"
+
+                        android:text="R(Grout): " />
+
+                    <TextView
+                        android:id="@+id/HB_result_RGrout_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="4"
+                        android:layout_marginStart="10dp"
+
+                        android:text="null" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginTop="5dp">
+
+                    <TextView
+                        android:id="@+id/HB_result_RB"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:layout_column="1"
+                        android:text="R(B):" />
+
+                    <TextView
+                        android:id="@+id/HB_result_RB_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="2"
+                        android:layout_marginStart="10dp"
+
+                        android:text="null" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginTop="5dp">
+
+                    <TextView
+                        android:id="@+id/HB_result_FH"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1"
+
+                        android:text="F(H):" />
+
+                    <TextView
+                        android:id="@+id/HB_result_FH_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="2"
+                        android:layout_marginStart="10dp"
+
+                        android:text="null" />
+
+                    <TextView
+                        android:id="@+id/HB_result_FC"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="3"
+                        android:layout_marginStart="50dp"
+
+                        android:text="F(C):" />
+
+                    <TextView
+                        android:id="@+id/HB_result_FC_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="4"
+                        android:layout_marginStart="10dp"
+
+                        android:text="null" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginTop="5dp">
+
+                    <TextView
+                        android:id="@+id/HB_result_TSL"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1"
+
+                        android:text="T(S,L): " />
+
+                    <TextView
+                        android:id="@+id/HB_result_TSL_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="2"
+                        android:layout_marginStart="10dp"
+
+                        android:text="null" />
+
+                    <TextView
+                        android:id="@+id/HB_result_TSH"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="3"
+                        android:layout_marginStart="50dp"
+
+                        android:text="T(S,H):" />
+
+                    <TextView
+                        android:id="@+id/HB_result_TSH_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="4"
+                        android:layout_marginStart="10dp"
+
+                        android:text="null" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginTop="5dp">
+
+                    <TextView
+                        android:id="@+id/HB_result_LHT"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1"
+                        android:text="L(H.T):" />
+
+                    <TextView
+                        android:id="@+id/HB_result_LHT_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="2"
+                        android:layout_marginStart="10dp"
+
+                        android:text="null" />
+
+                    <TextView
+                        android:id="@+id/HB_result_LCT"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="3"
+                        android:layout_marginStart="50dp"
+
+                        android:text="L(C.T):" />
+
+                    <TextView
+                        android:id="@+id/HB_result_LCT_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="4"
+                        android:layout_marginStart="10dp"
+
+                        android:text="null" />
+                </TableRow>
+            </TableLayout>
+
+            <TextView
+                android:id="@+id/HB_recommand_setup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Table1"
+                android:layout_marginTop="20sp"
+                android:text="@string/recommended_setup"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TableLayout
+                android:id="@+id/Table2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/HB_recommand_setup"
+                android:layout_marginTop="20dp">
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+
+                    <TextView
+                        android:id="@+id/HB_numOfBoreholes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1"
+                        android:text="@string/num_of_boreholes"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:id="@+id/HB_numOfBoreholes_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="2"
+                        android:layout_marginStart="10dp"
+                        android:text="null"
+                        android:textSize="20dp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+
+                    <TextView
+                        android:id="@+id/HB_minBoreholeLength"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1"
+                        android:text="@string/min_borehole_length"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:id="@+id/HB_minBoreholeLength_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="2"
+                        android:layout_marginStart="10dp"
+                        android:text="null"
+                        android:textSize="20dp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+
+                    <TextView
+                        android:id="@+id/Configure"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/configuration"
+                        android:textSize="20dp" />
+                </TableRow>
+            </TableLayout>
+
+            <TableLayout
+                android:id="@+id/Table3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Table2"
+                android:layout_marginTop="20dp">
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginTop="10dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="260dp"
+                        android:scaleType="fitXY"
+
+                        android:src="@drawable/hb_new" />
+                </TableRow>
+            </TableLayout>
+
+            <TableLayout
+                android:id="@+id/Table4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Table3"
+                android:layout_marginTop="10dp">
+                <!--                <TableRow-->
+                <!--                    android:layout_width="fill_parent"-->
+                <!--                    android:layout_height="fill_parent">-->
+
+                <!--                    <TextView-->
+                <!--                        android:id="@+id/HB_result_config_len"-->
+                <!--                        android:layout_width="wrap_content"-->
+                <!--                        android:layout_height="wrap_content"-->
+                <!--                        android:layout_column="1"-->
+                <!--                        android:textSize="20dp"-->
+                <!--                        android:text=" Minimum Borehole Length:"-->
+                <!--                        />-->
+                <!--                </TableRow>-->
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+
+                    <TextView
+                        android:id="@+id/HB_result_config"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1"
+                        android:text="null m × null Boreholes"
+                        android:textSize="20sp" />
+
+                </TableRow>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <Button
+                            android:id="@+id/Save_share_button"
+                            android:layout_width="@dimen/button_width"
+                            android:layout_height="@dimen/button_height"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            android:background="@drawable/round_button"
+                            android:onClick="saveAndShareHB"
+                            android:text="@string/save_and_share" />
+
+                        <Button
+                            android:id="@+id/Back"
+                            android:layout_width="@dimen/button_width"
+                            android:layout_height="@dimen/button_height"
+                            android:layout_marginTop="30dp"
+                            android:background="@drawable/round_button"
+                            android:onClick="clickBack"
+                            android:text="@string/back_to_main_menu"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/Save_share_button" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </RelativeLayout>
+            </TableLayout>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

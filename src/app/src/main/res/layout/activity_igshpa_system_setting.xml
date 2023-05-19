@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".IGSHPA_System_Setting">
+
+    <!-- Vertically-Bored Buttons -->
+    <Button
+        android:id="@+id/btn_VB"
+        android:layout_width="@dimen/button_width_setting"
+        android:layout_height="@dimen/button_height"
+        android:layout_marginStart="@dimen/button_margin_start_setting"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/round_button"
+        android:onClick="clickVB"
+        android:text="@string/vertically_bored_si"
+        app:layout_constraintEnd_toStartOf="@+id/btn_IGSHPA_VBIN"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_VB4"
+        android:layout_width="@dimen/button_width_setting"
+        android:layout_height="@dimen/button_height"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/round_button"
+        android:onClick="clickVBIU"
+        android:text="@string/vertically_bored_imperial"
+        app:layout_constraintEnd_toEndOf="@id/btn_VB"
+        app:layout_constraintStart_toStartOf="@id/btn_VB"
+        app:layout_constraintTop_toBottomOf="@+id/btn_VB" />
+
+    <ImageButton
+        android:id="@+id/btn_IGSHPA_VBIN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:onClick="clickIGSHPAVBIN"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/ic_baseline_infomation"
+        app:tint="#F3979090"
+        app:layout_constraintBottom_toBottomOf="@id/btn_VB"
+        app:layout_constraintStart_toEndOf="@id/btn_VB"
+        app:layout_constraintTop_toTopOf="@id/btn_VB" />
+
+    <View
+        android:id="@+id/separator1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="50dp"
+        android:background="@android:color/darker_gray"
+        app:layout_constraintTop_toBottomOf="@+id/btn_VB4" />
+
+    <!-- Horizontally-Bored Buttons -->
+    <Button
+        android:id="@+id/btn_HB"
+        android:layout_width="@dimen/button_width_setting"
+        android:layout_height="@dimen/button_height"
+        android:layout_marginStart="@dimen/button_margin_start_setting"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/round_button"
+        android:onClick="clickHB"
+        android:text="@string/horizontally_bored_si"
+        app:layout_constraintEnd_toStartOf="@+id/btn_IGSHPA_HBIN"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/separator1" />
+
+    <Button
+        android:id="@+id/btn_HB2"
+        android:layout_width="@dimen/button_width_setting"
+        android:layout_height="@dimen/button_height"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/round_button"
+        android:onClick="clickHBIU"
+        android:text="@string/horizontally_bored_imperial"
+        app:layout_constraintEnd_toEndOf="@id/btn_HB"
+        app:layout_constraintStart_toStartOf="@id/btn_HB"
+        app:layout_constraintTop_toBottomOf="@+id/btn_HB" />
+
+    <ImageButton
+        android:id="@+id/btn_IGSHPA_HBIN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:onClick="clickIGSHPAHBIN"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/ic_baseline_infomation"
+        app:tint="#F3979090"
+        app:layout_constraintBottom_toBottomOf="@id/btn_HB"
+        app:layout_constraintStart_toEndOf="@id/btn_HB"
+        app:layout_constraintTop_toTopOf="@id/btn_HB" />
+
+    <View
+        android:id="@+id/separator2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="50dp"
+        android:background="@android:color/darker_gray"
+        app:layout_constraintTop_toBottomOf="@+id/btn_HB2" />
+
+    <!-- Horizontally-Trenched Buttons -->
+    <Button
+        android:id="@+id/btn_HT"
+        android:layout_width="@dimen/button_width_setting"
+        android:layout_height="@dimen/button_height"
+        android:layout_marginStart="@dimen/button_margin_start_setting"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/round_button"
+        android:onClick="clickHT"
+        android:text="@string/horizontally_trenched_si"
+        app:layout_constraintEnd_toStartOf="@+id/btn_IGSHPA_HRIN"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/separator2" />
+
+    <Button
+        android:id="@+id/btn_HT2"
+        android:layout_width="@dimen/button_width_setting"
+        android:layout_height="@dimen/button_height"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/round_button"
+        android:onClick="clickHTIU"
+        android:text="@string/horizontally_trenched_imperial"
+        app:layout_constraintEnd_toEndOf="@id/btn_HT"
+        app:layout_constraintStart_toStartOf="@id/btn_HT"
+        app:layout_constraintTop_toBottomOf="@+id/btn_HT" />
+
+    <ImageButton
+        android:id="@+id/btn_IGSHPA_HRIN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:onClick="clickIGSHPAHRIN"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/ic_baseline_infomation"
+        app:tint="#F3979090"
+        app:layout_constraintBottom_toBottomOf="@id/btn_HT"
+        app:layout_constraintStart_toEndOf="@id/btn_HT"
+        app:layout_constraintTop_toTopOf="@id/btn_HT" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

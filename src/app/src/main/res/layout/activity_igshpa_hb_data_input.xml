@@ -1,0 +1,1089 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".IGSHPA_HB_Data_Input">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="COP(D)" />
+
+                <ImageButton
+                    android:id="@+id/btn_copd"
+                    android:layout_width="65dp"
+                    android:layout_height="20dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="100dp"
+                    android:background="@null"
+                    android:onClick="onImageButtonClick"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/ic_baseline_infomation"
+
+                    app:tint="#F3979090" />
+
+                <EditText
+                    android:id="@+id/input_hb_cop"
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="180dp"
+                    android:background="@drawable/edit_text"
+                    android:inputType="numberDecimal|numberSigned"
+                    android:singleLine="true" />
+
+                <TextView
+                    android:id="@+id/textViewx2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_toRightOf="@id/input_hb_cop"
+                    android:text="" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="20dp"
+                    android:text="EER(D)" />
+
+                <ImageButton
+                    android:id="@+id/btn_eerd"
+                    android:layout_width="65dp"
+                    android:layout_height="20dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="100dp"
+                    android:background="@null"
+                    android:onClick="onImageButtonClick"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/ic_baseline_infomation"
+                    app:tint="#F3979090" />
+
+                <EditText
+                    android:id="@+id/input_hb_eerd"
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="180dp"
+                    android:background="@drawable/edit_text"
+                    android:inputType="numberDecimal|numberSigned"
+                    android:singleLine="true" />
+
+                <TextView
+                    android:id="@+id/textViewx3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_toRightOf="@id/input_hb_eerd"
+                    android:text="" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="20dp"
+                    android:text="HC(D)" />
+
+                <ImageButton
+                    android:id="@+id/btn_hcd"
+                    android:layout_width="65dp"
+                    android:layout_height="20dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="100dp"
+                    android:background="@null"
+                    android:onClick="onImageButtonClick"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/ic_baseline_infomation"
+                    app:tint="#F3979090" />
+
+                <EditText
+                    android:id="@+id/input_hb_hcd"
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="180dp"
+                    android:background="@drawable/edit_text"
+                    android:inputType="numberDecimal|numberSigned"
+                    android:singleLine="true" />
+
+                <TextView
+                    android:id="@+id/textViewx4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_toRightOf="@id/input_hb_hcd"
+                    android:text="kW" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="20dp"
+                    android:text="TC(D)" />
+
+                <ImageButton
+                    android:id="@+id/btn_tcd"
+                    android:layout_width="65dp"
+                    android:layout_height="20dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="100dp"
+                    android:background="@null"
+                    android:onClick="onImageButtonClick"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/ic_baseline_infomation"
+                    app:tint="#F3979090" />
+
+                <EditText
+                    android:id="@+id/input_hb_tcd"
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="180dp"
+                    android:background="@drawable/edit_text"
+                    android:inputType="numberDecimal|numberSigned"
+                    android:singleLine="true" />
+
+                <TextView
+                    android:id="@+id/textViewx5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_toRightOf="@id/input_hb_tcd"
+                    android:text="kW" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="20dp"
+                    android:text="EWT(min)" />
+
+                <ImageButton
+                    android:id="@+id/btn_ewtmin"
+                    android:layout_width="65dp"
+                    android:layout_height="20dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="100dp"
+                    android:background="@null"
+                    android:onClick="onImageButtonClick"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/ic_baseline_infomation"
+                    app:tint="#F3979090" />
+
+                <EditText
+                    android:id="@+id/input_hb_ewtmin"
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="180dp"
+                    android:background="@drawable/edit_text"
+                    android:inputType="numberDecimal|numberSigned"
+                    android:singleLine="true" />
+
+                <TextView
+                    android:id="@+id/textViewx7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_toRightOf="@id/input_hb_ewtmin"
+                    android:text="°C" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="20dp"
+                    android:text="LWT(min)" />
+
+                <ImageButton
+                    android:id="@+id/btn_lwtmin"
+                    android:layout_width="65dp"
+                    android:layout_height="20dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="100dp"
+                    android:background="@null"
+                    android:onClick="onImageButtonClick"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/ic_baseline_infomation"
+                    app:tint="#F3979090" />
+
+                <EditText
+                    android:id="@+id/input_hb_lwtmin"
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="180dp"
+                    android:background="@drawable/edit_text"
+                    android:inputType="numberDecimal|numberSigned"
+                    android:singleLine="true" />
+
+                <TextView
+                    android:id="@+id/textViewx8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_toRightOf="@id/input_hb_lwtmin"
+                    android:text="°C" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="20dp"
+                    android:text="EWT(max)" />
+
+                <ImageButton
+                    android:id="@+id/btn_ewtmax"
+                    android:layout_width="65dp"
+                    android:layout_height="20dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="100dp"
+                    android:background="@null"
+                    android:onClick="conImageButtonClick"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/ic_baseline_infomation"
+                    app:tint="#F3979090" />
+
+                <EditText
+                    android:id="@+id/input_hb_ewtmax"
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="180dp"
+                    android:background="@drawable/edit_text"
+                    android:inputType="numberDecimal|numberSigned"
+                    android:singleLine="true" />
+
+                <TextView
+                    android:id="@+id/textViewx9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_toRightOf="@id/input_hb_ewtmax"
+                    android:text="°C" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="20dp"
+                    android:text="LWT(max)" />
+
+                <ImageButton
+                    android:id="@+id/btn_lwtmax"
+                    android:layout_width="65dp"
+                    android:layout_height="20dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="100dp"
+                    android:background="@null"
+                    android:onClick="onImageButtonClick"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/ic_baseline_infomation"
+                    app:tint="#F3979090" />
+
+                <EditText
+                    android:id="@+id/input_hb_lwtmax"
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="180dp"
+                    android:background="@drawable/edit_text"
+                    android:inputType="numberDecimal|numberSigned"
+                    android:singleLine="true" />
+
+                <TextView
+                    android:id="@+id/textViewx10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_toRightOf="@id/input_hb_lwtmax"
+                    android:text="°C" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="20dp"
+                    android:text="RT(CLG)" />
+
+                <ImageButton
+                    android:id="@+id/btn_rtclg"
+                    android:layout_width="65dp"
+                    android:layout_height="20dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="100dp"
+                    android:background="@null"
+                    android:onClick="onImageButtonClick"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/ic_baseline_infomation"
+                    app:tint="#F3979090" />
+
+                <EditText
+                    android:id="@+id/input_hb_rttlg"
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="180dp"
+                    android:background="@drawable/edit_text"
+                    android:inputType="numberDecimal|numberSigned"
+                    android:singleLine="true" />
+
+                <TextView
+                    android:id="@+id/textViewx11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_toRightOf="@id/input_hb_rttlg"
+                    android:text="hours" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="20dp"
+                    android:text="RT(HTG)" />
+
+                <ImageButton
+                    android:id="@+id/btn_rthtg"
+                    android:layout_width="65dp"
+                    android:layout_height="20dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="100dp"
+                    android:background="@null"
+                    android:onClick="onImageButtonClick"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/ic_baseline_infomation"
+                    app:tint="#F3979090" />
+
+                <EditText
+                    android:id="@+id/input_hb_rthlg"
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="180dp"
+                    android:background="@drawable/edit_text"
+                    android:inputType="numberDecimal|numberSigned"
+                    android:singleLine="true" />
+
+                <TextView
+                    android:id="@+id/textViewx12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_toRightOf="@id/input_hb_rthlg"
+                    android:text="hours" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView17"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="20dp"
+                    android:text="T(M)" />
+
+                <ImageButton
+                    android:id="@+id/btn_tm"
+                    android:layout_width="65dp"
+                    android:layout_height="20dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="100dp"
+                    android:background="@null"
+                    android:onClick="onImageButtonClick"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/ic_baseline_infomation"
+                    app:tint="#F3979090" />
+
+                <EditText
+                    android:id="@+id/input_hb_tm"
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="180dp"
+                    android:background="@drawable/edit_text"
+                    android:inputType="numberDecimal|numberSigned"
+                    android:singleLine="true" />
+
+                <TextView
+                    android:id="@+id/textViewx14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_toRightOf="@id/input_hb_tm"
+                    android:text="°C" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="20dp"
+                    android:text="AS" />
+
+                <ImageButton
+                    android:id="@+id/btn_as"
+                    android:layout_width="65dp"
+                    android:layout_height="20dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="100dp"
+                    android:background="@null"
+                    android:onClick="onImageButtonClick"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/ic_baseline_infomation"
+                    app:tint="#F3979090" />
+
+                <EditText
+                    android:id="@+id/input_hb_as"
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="180dp"
+                    android:background="@drawable/edit_text"
+                    android:inputType="numberDecimal|numberSigned"
+                    android:singleLine="true" />
+
+                <TextView
+                    android:id="@+id/textViewx15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_toRightOf="@id/input_hb_as"
+                    android:text="°C" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView19"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="20dp"
+                    android:text="k(G)" />
+
+                <ImageButton
+                    android:id="@+id/btn_kg"
+                    android:layout_width="65dp"
+                    android:layout_height="20dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="100dp"
+                    android:background="@null"
+                    android:onClick="onImageButtonClick"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/ic_baseline_infomation"
+                    app:tint="#F3979090" />
+
+                <EditText
+                    android:id="@+id/input_hb_kg"
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="180dp"
+                    android:background="@drawable/edit_text"
+                    android:inputType="numberDecimal|numberSigned"
+                    android:singleLine="true" />
+
+                <TextView
+                    android:id="@+id/textViewx16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_toRightOf="@id/input_hb_kg"
+                    android:text="W/(m K)" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView27"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="20dp"
+                    android:text="α" />
+
+                <ImageButton
+                    android:id="@+id/btn_alpha"
+                    android:layout_width="65dp"
+                    android:layout_height="20dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="100dp"
+                    android:background="@null"
+                    android:onClick="onImageButtonClick"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/ic_baseline_infomation"
+                    app:tint="#F3979090" />
+
+                <EditText
+                    android:id="@+id/input_hb_alpha"
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="180dp"
+                    android:background="@drawable/edit_text"
+                    android:inputType="numberDecimal|numberSigned"
+                    android:singleLine="true" />
+
+                <TextView
+                    android:id="@+id/textViewx24"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_toRightOf="@id/input_hb_alpha"
+                    android:text="m^2/day" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="20dp"
+                    android:text="D(GO)" />
+
+                <ImageButton
+                    android:id="@+id/btn_dgo"
+                    android:layout_width="65dp"
+                    android:layout_height="20dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="100dp"
+                    android:background="@null"
+                    android:onClick="onImageButtonClick"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/ic_baseline_infomation"
+                    app:tint="#F3979090" />
+
+                <EditText
+                    android:id="@+id/input_hb_dgo"
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="180dp"
+                    android:background="@drawable/edit_text"
+                    android:inputType="numberDecimal|numberSigned"
+                    android:singleLine="true" />
+
+                <TextView
+                    android:id="@+id/textViewx17"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_toRightOf="@id/input_hb_dgo"
+                    android:text="m" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView21"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="20dp"
+                    android:text="D(B)" />
+
+                <ImageButton
+                    android:id="@+id/btn_db"
+                    android:layout_width="65dp"
+                    android:layout_height="20dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="100dp"
+                    android:background="@null"
+                    android:onClick="onImageButtonClick"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/ic_baseline_infomation"
+                    app:tint="#F3979090" />
+
+                <EditText
+                    android:id="@+id/input_hb_db"
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="180dp"
+                    android:background="@drawable/edit_text"
+                    android:inputType="numberDecimal|numberSigned"
+                    android:singleLine="true" />
+
+                <TextView
+                    android:id="@+id/textViewx18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_toRightOf="@id/input_hb_db"
+                    android:text="m" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView22"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="20dp"
+                    android:text="D(PO)" />
+
+                <ImageButton
+                    android:id="@+id/btn_dpo"
+                    android:layout_width="65dp"
+                    android:layout_height="20dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="100dp"
+                    android:background="@null"
+                    android:onClick="onImageButtonClick"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/ic_baseline_infomation"
+                    app:tint="#F3979090" />
+
+                <EditText
+                    android:id="@+id/input_hb_dpo"
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="180dp"
+                    android:background="@drawable/edit_text"
+                    android:inputType="numberDecimal|numberSigned"
+                    android:singleLine="true" />
+
+                <TextView
+                    android:id="@+id/textViewx19"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_toRightOf="@id/input_hb_dpo"
+                    android:text="m" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView23"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="20dp"
+                    android:text="D(PI)" />
+
+                <ImageButton
+                    android:id="@+id/btn_dpi"
+                    android:layout_width="65dp"
+                    android:layout_height="20dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="100dp"
+                    android:background="@null"
+                    android:onClick="onImageButtonClick"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/ic_baseline_infomation"
+                    app:tint="#F3979090" />
+
+                <EditText
+                    android:id="@+id/input_hb_dpi"
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="180dp"
+                    android:background="@drawable/edit_text"
+                    android:inputType="numberDecimal|numberSigned"
+                    android:singleLine="true" />
+
+                <TextView
+                    android:id="@+id/textViewx20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_toRightOf="@id/input_hb_dpi"
+                    android:text="m" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView24"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="20dp"
+                    android:text="k(Pipe)" />
+
+                <ImageButton
+                    android:id="@+id/btn_kp"
+                    android:layout_width="65dp"
+                    android:layout_height="20dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="100dp"
+                    android:background="@null"
+                    android:onClick="onImageButtonClick"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/ic_baseline_infomation"
+                    app:tint="#F3979090" />
+
+                <EditText
+                    android:id="@+id/input_hb_kp"
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="180dp"
+                    android:background="@drawable/edit_text"
+                    android:inputType="numberDecimal|numberSigned"
+                    android:singleLine="true" />
+
+                <TextView
+                    android:id="@+id/textViewx21"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_toRightOf="@id/input_hb_kp"
+                    android:text="W/m °C" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView25"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="20dp"
+                    android:text="k(Grout)" />
+
+                <ImageButton
+                    android:id="@+id/btn_kgrout"
+                    android:layout_width="65dp"
+                    android:layout_height="20dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="100dp"
+                    android:background="@null"
+                    android:onClick="onImageButtonClick"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/ic_baseline_infomation"
+                    app:tint="#F3979090" />
+
+                <EditText
+                    android:id="@+id/input_hb_kGrout"
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="180dp"
+                    android:background="@drawable/edit_text"
+                    android:inputType="numberDecimal|numberSigned"
+                    android:singleLine="true" />
+
+                <TextView
+                    android:id="@+id/textViewx22"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_toRightOf="@id/input_hb_kGrout"
+                    android:text="W/m °C" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView26"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="20dp"
+                    android:text="AvgPipeDepth" />
+
+                <ImageButton
+                    android:id="@+id/btn_avgPipeDepth"
+                    android:layout_width="65dp"
+                    android:layout_height="20dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="100dp"
+                    android:background="@null"
+                    android:onClick="onImageButtonClick"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/ic_baseline_infomation"
+                    app:tint="#F3979090" />
+
+                <EditText
+                    android:id="@+id/input_hb_avgPipeDepth"
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="180dp"
+                    android:background="@drawable/edit_text"
+                    android:inputType="numberDecimal|numberSigned"
+                    android:singleLine="true" />
+
+                <TextView
+                    android:id="@+id/textViewx23"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_toRightOf="@id/input_hb_avgPipeDepth"
+                    android:text="m" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView28"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="20dp"
+                    android:text="Number of Boreholes\n (Optional)" />
+
+
+                <EditText
+                    android:id="@+id/input_hb_num_boreholes_optional"
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="180dp"
+                    android:background="@drawable/edit_text"
+                    android:inputType="numberDecimal"
+                    android:singleLine="true" />
+            </RelativeLayout>
+
+            <!--
+            A button to output default data. Now the data is automatically imported in this page.
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="30dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/ASHREA_default_input"
+                    android:layout_width="130dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="100dp"
+                    android:layout_marginEnd="100dp"
+                    android:layout_marginBottom="0dp"
+                    android:background="@drawable/round_button"
+                    android:onClick="clickIGSHPAHBDefaultInput"
+                    android:text="Default Data" />
+            </RelativeLayout>
+            -->
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="30dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/confirm_input"
+                    android:layout_width="130dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="100dp"
+                    android:layout_marginEnd="100dp"
+                    android:layout_marginBottom="30dp"
+                    android:background="@drawable/round_button"
+                    android:onClick="clickIGSHPAHBConfirm"
+                    android:text="@string/calculate" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

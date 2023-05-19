@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#673AB7</color>
+    <color name="purple_500">#4527A0</color>
+    <color name="purple_700">#311B92</color>
+    <color name="light_green">#324418</color>
+    <color name="teal_200">#00695C</color>
+    <color name="teal_700">#004D40</color>
+    <color name="black">#FFFFFFFF</color>
+    <color name="white">#FF000000</color>
+    <color name="light_brown">#654C32</color>
+    <color name="dark_brown">#402100</color>
+    <color name="brown">#5C3A07</color>
+    <color name="deer">#503005</color>
+    <color name="blue_white">#607D8B</color>
+    <color name="dark_blue_white">#455A64</color>
+<!--#070707-->
+    <color name="editText">#070707</color>
+
+    <color name="gray">#FF404040</color>
+    <color name="transparent">#0000FFFF</color>
+
+    <color name="title">#FF3E2D00</color>
+    <color name="content">#FF1A1F26</color>
+
+    <color name="line_button">#FF4B4F55</color>
+    <color name="edit_text">#FF424953</color>
+
+
+    <color name="colorPrimary1">#005676</color>
+    <color name="colorPrimaryDark1">#004566</color>
+
+    <color name="colorPrimary2">#734C00</color>
+    <color name="colorPrimaryDark2">#523400</color>
+
+    <color name="colorPrimary3">#276B4D</color>
+    <color name="colorPrimaryDark3">#1D5140</color>
+
+    <color name="colorPrimary4">#731C00</color>
+    <color name="colorPrimaryDark4">#521400</color>
+
+    <color name="colorPrimary5">#73163B</color>
+    <color name="colorPrimaryDark5">#520F34</color>
+
+    <color name="colorPrimary6">#000073</color>
+    <color name="colorPrimaryDark6">#000052</color>
+
+    <color name="colorPrimary7">#6B6B00</color>
+    <color name="colorPrimaryDark7">#4C4C00</color>
+
+    <color name="colorPrimary8">#1A3264</color>
+    <color name="colorPrimaryDark8">#13244C</color>
+
+    <color name="colorPrimary9">#3C4750</color>
+    <color name="colorPrimaryDark9">#444C54</color>
+
+    <color name="colorPrimary10">#1D5E3B</color>
+    <color name="colorPrimaryDark10">#15412E</color>
+
+    <color name="colorPrimary11">#802200</color>
+    <color name="colorPrimaryDark11">#800000</color>
+
+    <color name="colorPrimary12">#503F73</color>
+    <color name="colorPrimaryDark12">#3F344C</color>
+</resources>

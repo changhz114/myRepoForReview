@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <item android:id = "@+id/IGSHPA"
+        android:icon="@drawable/ic_design_method_information"
+        android:title = "IGSHPA"
+        app:showAsAction = "never"
+        />
+    <item android:id = "@+id/ASHRAE"
+        android:icon="@drawable/ic_design_method_information"
+        android:title = "ASHRAE"
+        app:showAsAction = "never"
+        />
+    <item android:id = "@+id/Development_Information"
+        android:icon="@drawable/ic_design_method_information"
+        android:title = "@string/development_information"
+        app:showAsAction = "never"
+        />
+    <item android:id = "@+id/About_the_App"
+        android:icon="@drawable/ic_design_method_information"
+        android:title = "@string/about_the_app"
+        app:showAsAction = "never"
+        />
+    <item android:id = "@+id/Language"
+        android:icon="@drawable/world"
+        android:title = "@string/language"
+        app:showAsAction = "always"
+        />
+    <item android:id = "@+id/Style"
+        android:icon="@drawable/brushes"
+        android:title = "@string/choose_style"
+        app:showAsAction = "always"
+        />
+
+</menu>

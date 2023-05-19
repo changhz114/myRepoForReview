@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AN-Boxjelly</string>
+    <string name="IGSHPA_info">IGSHPA presenta métodos de cálculo para la longitud de tubería requerida en sistemas GHE (Intercambio Geotérmico) con perforación vertical, perforación horizontal y zanjas horizontales,
+    junto con variaciones de cada método para calefacción y refrigeración. Para los sistemas con perforación, se asume que el suelo, del cual se intercambia calor, tiene una temperatura constante todo el tiempo.
+    Esta suposición funciona bien cuando la cantidad de energía ganada y liberada al suelo es equivalente.
+    Sin embargo, si esta suposición se vuelve falsa en algún momento, es necesario verificar un factor de corrección de carga desequilibrada en el suelo para ajustar la longitud de la perforación.</string>
+    <string name="IGSHPA_info_V2">La Asociación Internacional de Bombas de Calor de Fuente de Energía Terrestre (IGSHPA, por sus siglas en inglés) proporciona métodos de cálculo previo al diseño para sistemas con perforación vertical, perforación horizontal y zanjas horizontales.
+    Sus métodos se basan en la suposición de que el suelo, del cual se intercambia calor, tiene una temperatura constante a ciertas profundidades por debajo de la superficie.</string>
+    <string name="ASHRAE_info">El método presentado por ASHRAE es una ecuación única que tiene en cuenta los modos de calefacción y refrigeración, y se puede utilizar para sistemas de perforación vertical.
+    Este método utiliza una penalización de temperatura que considera el efecto de intercambio de calor a largo plazo en la perforación, e incluye tres cargas de calor representativas del edificio junto con sus respectivas resistencias térmicas.</string>
+    <string name="ASHRAE_info_V2">La Asociación Internacional de Bombas de Calor de Fuente de Energía Terrestre (IGSHPA, por sus siglas en inglés) proporciona métodos de cálculo previo al diseño para sistemas con perforación vertical, perforación horizontal y zanjas horizontales.
+    Sus métodos se basan en la suposición de que el suelo, del cual se intercambia calor, tiene una temperatura constante a ciertas profundidades por debajo de la superficie.</string>
+    <string name="Development_info">Los desarrolladores de esta aplicación fueron estudiantes de maestría que completaron su proyecto de software en la Universidad de Melbourne.</string>
+    <string name="About_the_APP_info">Versión 1.0. \nDesarrollado por la Universidad de Melbourne.\nEsta aplicación móvil está destinada a ser utilizada como una herramienta de apoyo para contratistas durante la fase de pre-diseño de sistemas GHE. Esta aplicación y sus resultados no pretenden reemplazar el software actual y/o los cálculos manuales utilizados en el proceso de pre-diseño.</string>
+    <string name="IGSHPAVB_info">Los sistemas de perforación vertical son comúnmente utilizados tanto en edificios residenciales como comerciales, ya que esta configuración requiere un mínimo de espacio disponible para la instalación.
+    Sin embargo, este sistema puede ser significativamente costoso debido al costo de la perforación, por lo que tanto los sistemas verticales como los horizontales deben considerarse para determinar la configuración más viable.</string>
+    <string name="IGSHPAHB_info">Los sistemas de perforación horizontal son una configuración común para propiedades que tienen grandes áreas de tierra para utilizar. La ventaja de utilizar esta configuración es que no se requiere una excavación extensa.
+    Dependiendo de la propiedad, el costo de dañar y reemplazar lo que actualmente ocupa la tierra puede superar el costo de la perforación, lo que hace que esta sea una configuración óptima.</string>
+    <string name="IGSHPAHT_info">Los sistemas de trincheras horizontales suelen ser la instalación más económica de los tres sistemas, ya que no se requiere perforación.
+    Sin embargo, estos sistemas requieren grandes áreas de tierra disponibles para excavar a fin de ser instalados, y incluso cuando hay suficiente tierra disponible, el costo de remover y reemplazar lo que actualmente está allí puede ser significativamente alto.</string>
+    <string name="COP_info">Coeficiente de Desempeño Diseñado.
+    (Valor sugerido: 4)</string>
+    <string name="TCD_info">Capacidad Total de Enfriamiento de la Bomba de Calor en condiciones de diseño.
+    (Valor sugerido: 20)</string>
+    <string name="HCD_info">Capacidad Total de Calefacción de la Bomba de Calor en condiciones de diseño.
+    (Valor sugerido: 20)</string>
+    <string name="EERD_info">Relación de Eficiencia Energética en condiciones de enfriamiento de diseño.
+    (Valor sugerido: 14.5)</string>
+    <string name="TG_info">Temperatura Profunda de la Tierra.
+    (Valor sugerido: 18 para Melbourne)</string>
+    <string name="TM_info">Temperatura Media de la Tierra en los primeros 10 pies del suelo.
+    (Valor sugerido: 24 para Melbourne)</string>
+    <string name="EWTmin_info">Temperatura Mínima de Entrada del Agua en condiciones de diseño de calefacción.
+    (Valor sugerido: 4 para Melbourne)</string>
+    <string name="LWTmin_info">Temperatura Mínima de Salida del Agua en condiciones de diseño de calefacción.
+    (Valor sugerido: 1 para Melbourne)</string>
+    <string name="EWTmax_info">Temperatura Máxima de Entrada del Agua en condiciones de diseño de calefacción.
+    (Valor sugerido: 30 para Melbourne)</string>
+    <string name="LWTmax_info">Temperatura Máxima de Salida del Agua en condiciones de diseño de calefacción.
+    (Valor sugerido: 34 para Melbourne)</string>
+    <string name="KG_info">Conductividad Térmica del Terreno.
+    (Valor sugerido: 1.73 para Melbourne)</string>
+    <string name="DGO_info">Diámetro del terreno circundante al pozo afectado por la transferencia de calor.
+    (Valor sugerido: 4.572)</string>
+    <string name="DB_info">Diámetro del Pozo.
+    (Valor sugerido: 0.12)</string>
+    <string name="DPO_info">Diámetro Exterior del Tubo.
+    (Valor sugerido: 0.027)</string>
+    <string name="Dpi_info">Diámetro Interno del Tubo.
+    (Valor sugerido: 0.022)</string>
+    <string name="kGrout_info">Conductividad Térmica del Grout.
+    (Valor sugerido: 0.692)</string>
+    <string name="kp_info">Conductividad Térmica del Tubo.
+    (Valor sugerido: 0.346)</string>
+    <string name="RTCLG_info">Tiempo Real de Funcionamiento del Equipo en modo de refrigeración por mes.
+    (Valor sugerido: 595)</string>
+    <string name="RTHTG_info">Tiempo Real de Funcionamiento del Equipo en modo de calefacción por mes.
+    (Valor sugerido: 595)</string>
+    <string name="AVGPipeDepth_info">Profundidad Promedio del Tubo.
+    (Valor sugerido: 3.1)</string>
+    <string name="AS_info">Variación Anual de la Temperatura de la Superficie del Terreno por encima y por debajo de TM.
+    (Valor sugerido: -0.1)</string>
+    <string name="Alpha_info">Difusividad Térmica del Suelo.
+    (Valor sugerido: 0.06)</string>
+    <string name="RS_info">Resistencia Térmica del Suelo.
+   (Valor sugerido: 1.6)</string>
+    <string name="SM_info">Multiplicador de Espaciado de Zanja.
+   (Valor sugerido: 1.2)</string>
+    <string name="PM_info">Multiplicador de Diámetro de Tubería.
+   (Valor sugerido: 1)</string>
+    <string name="rpin_info">Radio Interno del lazo U.
+   (Valor sugerido: 0.0137)</string>
+    <string name="rpext_info">Radio Externo del lazo U.
+   (Valor sugerido: 0.0167)</string>
+    <string name="rBore_info">Radio del Pozo de Perforación.
+   (Valor sugerido: 0.054)</string>
+    <string name="Lu_info">Distancia centro a centro entre tuberías del lazo U.
+   (Valor sugerido: 0.0471)</string>
+    <string name="hconv_info">Coeficiente de Convección Interno.
+   (Valor sugerido: 1000)</string>
+    <string name="TinHP_info">Temperatura de Entrada del Agua de la Bomba de Calor.
+   (Valor sugerido: 4.4)</string>
+    <string name="mfls_info">Tasa de Flujo de Masa de Fluido por kilovatio de carga máxima horaria del suelo.
+   (Valor sugerido: 0.074)</string>
+    <string name="Cp_info">Capacidad térmica del fluido (agua) del intercambiador de calor de la tierra (GHE).
+   (Valor sugerido: 4000)</string>
+    <string name="B_info">Distancia entre pozos de perforación.
+   (Valor sugerido: 6.1)</string>
+    <string name="H_info">Profundidad del Pozo de Perforación.
+   (Valor sugerido: 84.6)</string>
+    <string name="NB_info">Número de GHEs de Pozos de Perforación.
+   (Valor sugerido: 120)</string>
+    <string name="A_info">Relación Geométrica del Campo de Pozos de Perforación.
+   (Valor sugerido: 1.2)</string>
+    <string name="T_g_info">Temperatura del suelo no perturbado.
+   (Valor sugerido: 12.41)</string>
+    <string name="qy_info">Carga promedio anual del suelo.
+   (Valor sugerido: -1.762)</string>
+    <string name="qm_info">Carga mensual del suelo.
+   (Valor sugerido: -100)</string>
+    <string name="qh_info">Carga promedio horaria del suelo.
+   (Valor sugerido: -392.25)</string>
+    <string name="VB_Info">¡Aquí debería estar la información para VB!</string>
+    <string name="Heat_Pump_Specification"><u>Especificación de la Bomba de Calor</u></string>
+    <string name="Heat_Pump_Design_Conditions"><u>Condiciones de Diseño de la Bomba de Calor</u></string>
+    <string name="Ground_Properties"><u>Propiedades del Suelo</u></string>
+    <string name="Pipeline_Properties"><u>Propiedades de la Tubería</u></string>
+
+    <string name="Term_and_Conditions">Estos Términos Adicionales se establecen entre usted y la Universidad de Melbourne (la Universidad) y rigen su uso de la aplicación "Geothermal" (la Aplicación). Estos Términos Adicionales se suman a los términos de Apple (Términos de Terceros) que se aplican a su uso de la Aplicación. En caso de cualquier inconsistencia entre estos Términos Adicionales y los Términos de Terceros, estos Términos Adicionales prevalecerán en la medida de cualquier inconsistencia.
+    \nAl utilizar la Aplicación, se considera que ha leído, comprendido y aceptado cumplir y cumplir estos Términos Adicionales (según enmendados por la Universidad de vez en cuando).
+
+    \n<b>1. Uso de la Aplicación</b>
+    \n1.1 Reconocimiento y acuerdo
+    \n\tLa Aplicación es una herramienta que proporciona algunos cálculos previos de diseño para sistemas de bombas de calor geotérmicas de fuente terrestre (GSHP). Reconoce y acepta que la Universidad no ofrece ninguna representación sobre el funcionamiento de la Aplicación o la precisión de cualquier resultado obtenido de la Aplicación, y que la Aplicación debe utilizarse solo como una guía, y no como una fuente en la que se basen decisiones. Antes de utilizar cualquier información obtenida a través de la Aplicación, debe:
+    \n\t(a) verificar de forma independiente la exactitud, vigencia o integridad de dicha información; y
+    \n\t(b) buscar el asesoramiento independiente de un profesional debidamente calificado.
+    \n\tLa Universidad no se hace responsable ante usted ni ante ninguna otra persona por ninguna decisión tomada o acción realizada basada en cualquier información obtenida a través de la Aplicación.
+    \n1.2 Suspensión y cancelación
+    \n\tLa Universidad puede suspender o cancelar su acceso o uso de la Aplicación en cualquier momento sin previo aviso. Usted puede dejar de utilizar la Aplicación eliminando la aplicación de su dispositivo y eliminando cualquier software relevante de su dispositivo o computadora.
+    \n1.3 Privacidad
+    \n\t(a) La Universidad puede recopilar, almacenar y proporcionar a proveedores de servicios de terceros "información personal" e "información sensible" según se define en la Ley de Privacidad de la Información de 2000 (Vic).
+    \n\t(b) La política de privacidad de la Universidad relacionada con la información recopilada por la Universidad se puede acceder en <a href="http://policy.unimelb.edu.au/MPF1104">http://policy.unimelb.edu.au/MPF1104</a> y forma parte de estos Términos Adicionales.
+    \n<b>2. Garantías e indemnización</b>
+
+    \n2.1 Garantías del consumidor
+    \n\t(a) Además de los derechos que pueda tener bajo estos Términos Adicionales, también puede tener otros derechos según las leyes que varían de una jurisdicción a otra. En particular, puede tener derechos bajo las garantías del consumidor que se aplican a la provisión de productos o servicios según la Ley Australiana del Consumidor (tal como se establece en el Anexo 2 de la Ley de Competencia y Consumo de 2010 (Cth)), enmendada de vez en cuando, o cualquier otra legislación similar de un estado o territorio de Australia con respecto a bienes o servicios, que no pueden ser excluidos, limitados o modificados por estos Términos Adicionales (colectivamente, Garantías del Consumidor).
+    \n\t(b) Estos Términos Adicionales no excluyen, limitan o modifican la aplicación de las Garantías del Consumidor ni ninguna otra condición, garantía, derecho o recurso conferido o implícito en virtud de cualquier disposición de cualquier ley donde hacerlo:
+    \n\t(i) contravendría la ley pertinente; o
+    \n\t(ii) causaría que alguna parte de estos Términos Adicionales sea nula y/o inaplicable.
+    \n2.2 Limitación de responsabilidad
+    \n\t(a) En las cláusulas 2.2 y 2.3, Pérdidas significa todas las responsabilidades, pérdidas, daños, costos y gastos, incluyendo:
+    \n\t(i) responsabilidades, pérdidas, daños, costos y gastos directos, indirectos o consecuentes;
+    \n\t(ii) costos y desembolsos legales, ya sea incurridos o adjudicados contra una parte, incluyendo los costos de investigación, litigio, acuerdo y cumplimiento de sentencias; y
+    \n\t(iii) intereses, multas y sanciones, sufridos o incurridos por cualquier persona, ya sea que surjan en contrato, agravio (incluyendo negligencia) u otra forma.
+    \n\t(b) Aparte de las Garantías del Consumidor, la Universidad excluye todas las garantías, condiciones u otros términos, ya sean implícitos por ley o de otra manera, incluyendo, sin limitación, todas las representaciones o garantías, ya sean expresas o implícitas, sobre el contenido contenido en la Aplicación o los servicios proporcionados a través de la Aplicación para cualquier propósito (incluyendo representaciones sobre la precisión, vigencia, integridad o idoneidad de la información publicada en la Aplicación).
+    \n\t(c) Excepto por la responsabilidad en virtud de las Garantías del Consumidor, la Universidad excluye la responsabilidad por todas las Pérdidas sufridas o incurridas por cualquier persona:
+   \n\t(i) en relación con la Aplicación, incluyendo cualquier interrupción en la Aplicación, interferencia o daño a sistemas informáticos u otros dispositivos electrónicos; o
+   \n\t(ii) en relación con cualquier error, omisión o inexactitud contenida en cualquier información publicada en la Aplicación, incluyendo Pérdidas relacionadas con su confianza en la información obtenida a través de la Aplicación; y
+   \n\t(iii) de otra manera bajo o en relación con estos Términos Adicionales.
+   \n\t(d) Salvo por responsabilidad en virtud de las Garantías al Consumidor, en la medida en que la Universidad no pueda excluir su responsabilidad en virtud de esta cláusula 2.2, la Universidad limita su responsabilidad, a opción de la Universidad y en la medida máxima permitida por la ley, a:
+   \n\t(i) reabastecer los servicios o servicios equivalentes; o
+  \n\t(ii) pagar el costo de volver a suministrar los servicios o servicios equivalentes.
+  \n2.3 Indemnización
+  \n\t (a) Usted indemniza a la Universidad y a cada uno de sus directores, funcionarios, empleados, agentes, asesores, consultores y contratistas (colectivamente, las Personas Indemnizadas) contra todas las Pérdidas que surjan o estén relacionadas con:
+  \n\t(i) su uso de la Aplicación;
+  \n\t(ii) su incumplimiento de estos Términos Adicionales o infracción de la ley;
+  \n\t(iii) su incumplimiento de cualquier Término de Terceros; o
+  \n\t(iv) cualquier reclamo que alegue que ha infringido los derechos de propiedad intelectual u otros derechos de cualquier persona.
+  \n\t(b) Si alguna Persona Indemnizada sufre o incurre en alguna Pérdida como resultado de su incumplimiento de estos Términos Adicionales u otra acción u omisión y la Universidad hubiera podido recuperar esas Pérdidas si las Pérdidas hubieran sido sufridas o incurridas por la Universidad, entonces la Universidad podrá recuperar esas Pérdidas como si hubieran sido sufridas o incurridas por la Universidad.
+    \n<b>3. General</b>
+    \n3.1 Cambios en los Términos Adicionales
+    \n\tLa Universidad puede cambiar estos Términos Adicionales en cualquier momento. Usted acepta quedar obligado por los términos modificados si continúa utilizando la Aplicación después de que los términos hayan cambiado.
+    \n3.2 Separabilidad
+   \n\tSi alguna parte de estos Términos Adicionales se considera inválida, ilegal o inaplicable, esa parte se separará y las partes restantes de estos Términos Adicionales continuarán vigentes.
+   \n3.3 Ley aplicable
+   \n\tEstos términos están regidos por las leyes aplicables en el Estado de Victoria, Australia, y usted se somete a la jurisdicción no exclusiva de los tribunales de ese Estado.</string>
+
+
+
+    //
+
+    <string name="design_method">Método de Diseño</string>
+
+    <string name="ashrae_unit_selection">Selección de Unidades ASHRAE</string>
+
+    <string name="accept">Aceptar</string>
+    <string name="term_and_condition_title">Términos y Condiciones</string>
+    <string name="decline">Rechazar</string>
+
+    <string name="igshpa_vb_result">Resultado IGSHPA VB</string>
+    <string name="igshpa_ht_result">Resultado IGSHPA HT</string>
+    <string name="igshpa_hb_result">Resultado IGSHPA HB</string>
+
+
+
+    <string name="igshpa_method">Método IGSHPA</string>
+
+    <string name="information">Información</string>
+    <string name="ok">Aceptar</string>
+
+    <string name="save_csv_success">¡Guardado exitoso del archivo CSV!</string>
+    <string name="geothermal_calculator">Calculadora de Bomba de Calor Geotérmica</string>
+    <string name="calculation_result">Resultado del Cálculo</string>
+    <string name="recommended_setup">Configuración Recomendada</string>
+    <string name="configuration">Configuración:</string>
+    <string name="save_and_share">Guardar y Compartir</string>
+    <string name="back_to_main_menu">Volver al Menú Principal</string>
+    <string name="calculate">Calcular</string>
+    <string name="ashrae_result">Resultado ASHRAE</string>
+    <string name="si_units">Unidades del SI</string>
+    <string name="imperial_units">Unidades Imperiales</string>
+
+    <string name="development_information">Información de Desarrollo</string>
+    <string name="about_the_app">Sobre la Aplicación</string>
+    <string name="language">Idioma</string>
+    <string name="choose_style">Estilo</string>
+
+    <string name="style_default">Tema Predeterminado</string>
+    <string name="style_changed_to_default">El estilo ha cambiado a predeterminado.</string>
+
+    <string name="style_blue">ESTILO AZUL</string>
+    <string name="style_changed_to_blue">Estilo cambiado a azul.</string>
+
+    <string name="style_green">Estilo Verde</string>
+    <string name="style_changed_to_green">El estilo ha cambiado a verde.</string>
+
+
+    <string name="style_lemon">Estilo Limón</string>
+    <string name="style_changed_to_lemon">Estilo cambiado a limón.</string>
+
+    <string name="english">English</string>
+    <string name="chinese">中文</string>
+    <string name="spanish">Español</string>
+
+    <string name="language_changed_to_english">Idioma cambiado a inglés</string>
+    <string name="language_changed_to_spanish">Idioma cambiado a español</string>
+    <string name="language_changed_to_chinese">Idioma cambiado a chino</string>
+    <string name="choose_language">Seleccionar idioma</string>
+
+    <string name="error_empty_field">El campo no puede estar vacío</string>
+    <string name="error_exceed_max_range">Excede el rango máximo</string>
+    <string name="error_invalid_input">Entrada no válida</string>
+    <string name="download_method_1">En formato PNG</string>
+    <string name="download_method_2">En formato CSV</string>
+    <string name="download_method_3">Enviar diseño al equipo de 4ee</string>
+    <string name="download_title">Exportar</string>
+
+    <string name="vertically_bored_si">Verticalmente-\nAburrido\n(Unidades SI)</string>
+    <string name="vertically_bored_imperial">Verticalmente-\nAburrido\n(Unidades Imperiales)</string>
+    <string name="horizontally_bored_si">Horizontalmente-\nAburrido\n(Unidades SI)</string>
+    <string name="horizontally_bored_imperial">Horizontalmente-\nAburrido\n(Unidades Imperiales)</string>
+    <string name="horizontally_trenched_imperial">Horizontalmente-\nTrinchado\n(Unidades Imperiales)</string>
+    <string name="horizontally_trenched_si">Horizontalmente-\nTrinchado\n(Unidades SI)</string>
+
+    <string name="null_m_boreholes">null m × null Agujeros</string>
+    <string name="min_borehole_length">Longitud mínima del agujero:</string>
+    <string name="num_of_boreholes">Número de agujeros:</string>
+    <string name="individual_borehole_length">Longitud individual del orificio:</string>
+    <string name="number_of_trenches">Número de ranuras:</string>
+    <string name="num_of_pipes_in_each_trench">Número de tubos por ranura:</string>
+    <string name="minimum_trench_length">Longitud mínima de la zanja:</string>
+
+</resources>
